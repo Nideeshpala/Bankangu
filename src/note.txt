@@ -1,0 +1,42 @@
+Redirection in angular
+=======================
+
+
+link click Redirection      href/routerLink
+
+button click redirection    nethod   ---   navigateByUrl()   used to redirect to other page  (every methods have a class)
+class   ---   Router   ( is a class )
+module  ---   AppRoutingModule   (creates when at the time of projects creation) AppRoutingModule is a module creates when at the time of projects creation , it have class named Router and Router have a method named navigateByUrl 
+
+
+package   ---    contain many no of files  -- collection of modules
+module    ---    files   --  collection of classes
+class     ---    collection of methods
+
+
+
+
+Data binding in angular
+========================
+
+html - ts     (here html is called "view" and ts is called component)
+view - component
+
+
+two types of binding
+
+1 . one way data binding
+    1.1  -  component to view
+       1.1.1  -  string interpollation    {{}}    ( using double kerly bracket)
+       1.1.2  -  property binding         [propertyName]="value"
+
+    1.2  -  view to component
+       1.2.1  -  event binding            (eventName)="methodName()"           click
+       1.2.2  -  $event binding           (eventName)="methodName($event)"     change
+       1.2.3  -  event binding with template rendering variable    (event)="method(template rendering variable)"
+2 . two way data binding    
+
+
+life cycle blocks of Angular components
+================================
+constructor-->ngOnInit-->other methods
