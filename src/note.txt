@@ -34,9 +34,31 @@ two types of binding
        1.2.1  -  event binding            (eventName)="methodName()"           click
        1.2.2  -  $event binding           (eventName)="methodName($event)"     change
        1.2.3  -  event binding with template rendering variable    (event)="method(template rendering variable)"
-2 . two way data binding    
+
+2 . two way data binding
+   2.1   -  ng modal   
+                -formsModule 
 
 
 life cycle blocks of Angular components
 ================================
 constructor-->ngOnInit-->other methods
+
+
+
+Dependecy injection
+====================
+used to access datas and methods of one class in another class (like inheritance)
+
+-inside constructor
+-access specifiern - private/public   
+
+          constructor(public/private reference:ClassName)
+
+
+Angular service
+===============
+
+a file used to keep datas and methods that can access by any components in that module
+
+ng g s serviceName
