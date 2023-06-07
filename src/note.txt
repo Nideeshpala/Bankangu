@@ -4,7 +4,7 @@ Redirection in angular
 
 link click Redirection      href/routerLink
 
-button click redirection    nethod   ---   navigateByUrl()   used to redirect to other page  (every methods have a class)
+button click redirection    method   ---   navigateByUrl()   used to redirect to other page  (every methods have a class)
 class   ---   Router   ( is a class )
 module  ---   AppRoutingModule   (creates when at the time of projects creation) AppRoutingModule is a module creates when at the time of projects creation , it have class named Router and Router have a method named navigateByUrl 
 
@@ -51,7 +51,7 @@ Dependecy injection
 used to access datas and methods of one class in another class (like inheritance)
 
 -inside constructor
--access specifiern - private/public   
+-access specifier - private/public   
 
           constructor(public/private reference:ClassName)
 
@@ -62,3 +62,35 @@ Angular service
 a file used to keep datas and methods that can access by any components in that module
 
 ng g s serviceName
+
+
+
+server creation
+===============
+npm init
+npm i express  --  to install express
+
+
+
+api creation in Angular
+=======================
+
+httpClientModule  --  module
+HttpClient  --  class
+methods   ---  (get,post,patch,delete)
+
+
+
+asynchronous in ts
+==================
+
+js  --  promise  --  then() for resolving
+                 --  catch() for rejection
+
+ts  --  observable -- subsribe()
+                   -- catch()
+
+
+form creation in Angular
+========================
+

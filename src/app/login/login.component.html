@@ -1,30 +1,32 @@
-<div class="cld container  w-25 mt-5 me-auto ms-5 col-xs-6 col-sm-6 col-md-4 col-lg-3 col xl-2 mt-4" style=" border-radius:10px; background-color: rgb(227, 219, 153);">
-
 <form>
 
-        <div class=" container w col-xs-12 col-sm-12 col-md-6 col-lg-12 col xl-12">
-    
-            <h2 class="text-white text-center p-4">Sign in</h2>
-    
-            <div>
-                <input #psw (change)="acnoChange($event)" id="u1" class="form-control mt-5 p-2 container w" type="text" [placeholder]="pdata">
-                <input id="p1" class="form-control mt-3 p-2 container w" type="password" placeholder="Password">
+    <div class="row mt-5" style="width: 100%;">
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6" >
+
+            <div class=" p-4  ms-5 mt-3 text-center " style="background-color: rgb(216, 238, 116); border-radius: 10px; width: 50%;">
+                <h2>Login</h2>
+                <input [(ngModel)]="acno" id="u1" class="form-control mt-5  p-2 " name="Acno" type="text" [placeholder]="pdata">
+                <input [(ngModel)]="psw" id="p1" class="form-control  p-2 mt-4 " name="Psw" type="password" [placeholder]="pass">
+                <button (click)="login()" type="submit" class=" btn btn-light col-xs-4 col-lg-12 col xl-12 mt-4 w-25 ">Submit</button>
+                <div class="  text-center p-3" style="text-decoration: none">
+                    Dont have a account?
+                    <a routerLink="register">Create Account</a>
+                </div>
+
             </div>
-    
-            <div class="  mt-5 col-xs-12 col-sm-6 col-md-12 col-lg-12 col xl-12 " style="text-align:center;">
-                <button (click)="login(psw)" type="submit" class="bs1 btn btn-light col-xs-4 col-lg-12 col xl-12 w-25  " style="padding-left: 8px;"><span>Submit</span></button>
-            </div>
-    
-            <div class="  text-center p-3" style="text-decoration: none">
-                Dont have a account?
-                <a href="register">Create Account</a>
-            </div>
-    
+
+
         </div>
-    
+
+        <div class=" container-fluid col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 " >
+            <img style="width: 60%;" src="https://i.postimg.cc/JhSqt128/best-choice-save-money-bank-deposit-promo-82574-4362.jpg" alt="">
+        </div>
+    </div>
 </form>
-</div>
-<div class="col-6 bdy ms-auto ms-5  ">
-    <img style="width: 60%; margin-left: 20%; margin-top: -440px;" src="https://i.postimg.cc/yx4Fs4kp/best-choice-save-money-bank-deposit-promo-82574-4362.jpg" alt="">
-    
-</div>
+
+
+
+
+
+
